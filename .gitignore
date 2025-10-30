@@ -1,0 +1,32 @@
+# --- Compilados y dependencias ---
+bin/
+obj/
+out/
+
+# --- Configuración local / IDE ---
+.vscode/
+*.user
+*.suo
+
+# --- Archivos del sistema ---
+.DS_Store
+Thumbs.db
+
+# --- Archivos de entorno ---
+.env
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# --- Librerías del front) ---
+wwwroot/lib/
+
+# --- Archivos de bases de datos locales ---
+*.db
+*.mdf
+*.ldf
+
+# --- Logs y temporales ---
+*.log
+*.tmp
+
