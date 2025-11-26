@@ -22,6 +22,9 @@
             &copy; 2025 - nomadate_web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+    @await Html.PartialAsync("_AuthModal")
+
+    <script src="~/js/auth.js"></script>
 
     <script src="~/js/site.js" asp-append-version="true"></script>
 </body>

@@ -1,0 +1,22 @@
+@model IEnumerable<nomadate_web.Models.Usuario>
+
+<h2>Usuarios en la base Nomadate</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th><th>Nombre</th><th>Apellido</th><th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var u in Model)
+        {
+            <tr>
+                <td>@u.IdUsuario</td>
+                <td>@u.Nombre</td>
+                <td>@u.Apellido</td>
+                <td>@u.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
