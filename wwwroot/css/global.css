@@ -1,0 +1,112 @@
+/* ========== GLOBAL STYLES ========== */
+/* Estilos globales que aplican a todas las páginas */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables CSS - Paleta de colores del sitio */
+:root {
+    /* Azul marino y blancos */
+    --color-primary: #112B3C;        /* Azul marino oscuro (del logo) */
+    --color-primary-dark: #0A1E2B;   /* Azul más oscuro */
+    --color-primary-light: #1A3A4F;  /* Azul marino claro */
+    --color-secondary: #205375;      /* Azul medio */
+    --color-accent: #3A5F7D;         /* Azul acento */
+    --color-dark: #0D1F2D;           /* Azul muy oscuro para textos */
+    --color-light: #F8F9FA;          /* Blanco grisáceo */
+    --color-text: #333;              /* Color de texto principal */
+    --color-text-light: #666;        /* Color de texto secundario */
+    --color-bg: #fff;                /* Fondo blanco */
+    --color-footer: #0F2534;         /* Azul oscuro para footer */
+}
+
+/* Estilos del body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg);
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    width: 100%;
+}
+
+/* Container genérico */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Links generales */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Botones base */
+.btn {
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Iconos SVG */
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Utilidades de espaciado */
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+.p-1 { padding: 0.5rem; }
+.p-2 { padding: 1rem; }
+.p-3 { padding: 1.5rem; }
+.p-4 { padding: 2rem; }
+
+/* Utilidades de texto */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-light { color: var(--color-text-light); }
+
+/* Utilidades de display */
+.d-none { display: none; }
+.d-block { display: block; }
+.d-flex { display: flex; }
+.d-grid { display: grid; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+}

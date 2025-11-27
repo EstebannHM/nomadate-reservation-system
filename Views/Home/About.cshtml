@@ -1,0 +1,145 @@
+@{
+    ViewData["Title"] = "Sobre Nosotros";
+}
+
+<link rel="stylesheet" href="~/css/about.css" asp-append-version="true" />
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/about.css" asp-append-version="true" />
+}
+
+<!-- Hero Section -->
+<section class="about-hero">
+    <div class="hero-content">
+        <h1>Sobre Hotel Nomadate</h1>
+        <p>Más de 10 años brindando hospitalidad excepcional</p>
+    </div>
+</section>
+
+<!-- Nuestra Historia -->
+<section class="story-section">
+    <div class="container">
+        <div class="story-content">
+            <div class="story-text">
+                <h2>Nuestra Historia</h2>
+                <p>Hotel Nomadate nació en 2015 con una visión clara: crear un espacio donde cada huésped se sienta como en casa, lejos de casa. Ubicados en el corazón de San José, Costa Rica, hemos construido una reputación basada en la excelencia del servicio y la comodidad de nuestras instalaciones.</p>
+                <p>A lo largo de los años, hemos recibido a miles de viajeros de todo el mundo, cada uno con su propia historia y necesidades únicas. Nuestro compromiso ha sido siempre el mismo: brindar una experiencia inolvidable que combine confort, hospitalidad y atención personalizada.</p>
+            </div>
+            <div class="story-image">
+                <img src="~/images/about-history.jpg" alt="Hotel Nomadate Historia">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Nuestra Misión y Visión -->
+<section class="mission-section">
+    <div class="container">
+        <div class="mission-grid">
+            <div class="mission-card">
+                <div class="mission-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                        <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                </div>
+                <h3>Nuestra Misión</h3>
+                <p>Proporcionar a nuestros huéspedes una experiencia de alojamiento excepcional, combinando comodidad, calidad y servicio personalizado. Nos esforzamos por superar las expectativas en cada estancia, creando momentos memorables y un ambiente acogedor.</p>
+            </div>
+
+            <div class="mission-card">
+                <div class="mission-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                </div>
+                <h3>Nuestra Visión</h3>
+                <p>Ser reconocidos como el hotel preferido en Costa Rica, destacando por nuestra calidez humana, instalaciones de primera clase y compromiso con la excelencia. Aspiramos a expandir nuestra presencia mientras mantenemos los valores que nos definen.</p>
+            </div>
+
+            <div class="mission-card">
+                <div class="mission-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+                <h3>Nuestros Valores</h3>
+                <p>Hospitalidad, Integridad, Excelencia y Compromiso. Estos pilares guían cada decisión y acción que tomamos. Creemos en tratar a cada huésped con respeto, honestidad y dedicación para asegurar su satisfacción completa.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Nuestro Equipo -->
+<section class="team-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Nuestro Equipo</h2>
+            <p>Profesionales dedicados a tu comodidad</p>
+        </div>
+
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="~/images/team-1.jpg" alt="Director">
+                </div>
+                <h4>Esteban Hernandez</h4>
+                <p class="member-role">Director</p>
+                <p class="member-bio">Con experiencia en gestión hotelera, Esteban lidera nuestro equipo con visión estratégica y compromiso con la excelencia.</p>
+            </div>
+
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="~/images/team-2.jpg" alt="Gerente de Atención">
+                </div>
+                <h4>Santiago Osejo</h4>
+                <p class="member-role">Gerente de Atención</p>
+                <p class="member-bio">Santiago asegura que cada huésped reciba un servicio personalizado y excepcional durante toda su estadía.</p>
+            </div>
+
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="~/images/team-3.jpg" alt="Gerente de Operaciones">
+                </div>
+                <h4>Jason Flores</h4>
+                <p class="member-role">Gerente de Operaciones</p>
+                <p class="member-bio">Jason coordina todas las operaciones del hotel para garantizar el funcionamiento perfecto de nuestras instalaciones.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Estadísticas -->
+<section class="stats-section">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Años de Experiencia</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5000+</div>
+                <div class="stat-label">Huéspedes Satisfechos</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Habitaciones Disponibles</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Tasa de Satisfacción</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section">
+    <div class="container">
+        <h2>¿Listo para Vivir la Experiencia Nomadate?</h2>
+        <p>Reserva ahora y descubre por qué somos el hotel preferido de miles de viajeros</p>
+        <a asp-controller="Habitaciones" asp-action="Index" class="btn-cta">Ver Habitaciones</a>
+    </div>
+</section>

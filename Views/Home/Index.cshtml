@@ -1,1 +1,171 @@
-﻿
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+}
+
+<!-- Sección Hero con Barra de Búsqueda -->
+<section class="hero-section">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h1 class="hero-title">Bienvenido a Hotel Nomadate</h1>
+            <p class="hero-subtitle">Tu hogar lejos de casa. Experimenta comodidad y hospitalidad excepcional.</p>
+            
+            <!-- Barra de Búsqueda -->
+            <div class="search-bar">
+                <form class="search-form">
+                    <div class="search-group">
+                        <label for="checkIn">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            Fecha de Entrada
+                        </label>
+                        <input type="date" id="checkIn" name="checkIn" required>
+                    </div>
+
+                    <div class="search-group">
+                        <label for="checkOut">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            Fecha de Salida
+                        </label>
+                        <input type="date" id="checkOut" name="checkOut" required>
+                    </div>
+
+                    <div class="search-group">
+                        <label for="guestName">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            Nombre Completo
+                        </label>
+                        <input type="text" id="guestName" name="guestName" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="search-group">
+                        <label for="guests">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            Huéspedes
+                        </label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Seleccionar</option>
+                            <option value="1">1 Huésped</option>
+                            <option value="2">2 Huéspedes</option>
+                            <option value="3">3 Huéspedes</option>
+                            <option value="4">4 Huéspedes</option>
+                            <option value="5">5+ Huéspedes</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-search">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        Buscar Disponibilidad
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Imagen Destacada -->
+<section class="featured-image-section">
+    <div class="container">
+        <div class="featured-image-wrapper">
+            <img src="~/images/hotel-featured.jpg" alt="Hotel Nomadate" class="featured-image">
+            <div class="featured-overlay">
+                <h2>Experiencia Inolvidable</h2>
+                <p>Descubre el confort y la elegancia en cada rincón de nuestro hotel</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Por Qué Elegirnos -->
+<section class="why-choose-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>¿Por Qué Elegir Hotel Nomadate?</h2>
+            <p>Descubre lo que nos hace especiales</p>
+        </div>
+
+        <div class="features-grid">
+            <!-- Card 1 -->
+            <div class="feature-card">
+                <div class="feature-image">
+                    <img src="~/images/room-luxury.jpg" alt="Habitaciones de Lujo">
+                </div>
+                <div class="feature-content">
+                    <h3>Habitaciones de Lujo</h3>
+                    <p>Espacios diseñados con elegancia y comodidad, equipados con todas las amenidades modernas para tu estadía perfecta.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="feature-card">
+                <div class="feature-image">
+                    <img src="~/images/room-comfort.jpg" alt="Máxima Comodidad">
+                </div>
+                <div class="feature-content">
+                    <h3>Máxima Comodidad</h3>
+                    <p>Camas premium, aire acondicionado, TV inteligente y más. Todo pensado para tu descanso y entretenimiento.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="feature-card">
+                <div class="feature-image">
+                    <img src="~/images/room-service.jpg" alt="Servicio Excepcional">
+                </div>
+                <div class="feature-content">
+                    <h3>Servicio Excepcional</h3>
+                    <p>Nuestro equipo está disponible 24/7 para asegurar que tu experiencia sea memorable desde el check-in hasta el check-out.</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="feature-card">
+                <div class="feature-image">
+                    <img src="~/images/room-location.jpg" alt="Ubicación Privilegiada">
+                </div>
+                <div class="feature-content">
+                    <h3>Ubicación Privilegiada</h3>
+                    <p>Estratégicamente ubicado cerca de las principales atracciones, restaurantes y centros comerciales de la ciudad.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Call to Action -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>¿Listo para tu próxima aventura?</h2>
+            <p>Reserva ahora y obtén las mejores tarifas disponibles</p>
+            <a asp-controller="Habitaciones" asp-action="Index" class="btn-cta">Ver Todas las Habitaciones</a>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script src="~/js/validations.js" asp-append-version="true"></script>
+}
